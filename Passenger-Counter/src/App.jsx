@@ -13,10 +13,10 @@ function App() {
       </div>
       <h2>{count}</h2>
       <div className="card">
-        <button onClick={() => setCount(count + 1)}>
+        <button onClick={() => setCount(() => count + 1)}>
           Increment
         </button>
-        <button onClick={() => setCount(0)}>
+        <button onClick={() => setCount(() => 0)}>
           Reset
         </button>
       </div>
